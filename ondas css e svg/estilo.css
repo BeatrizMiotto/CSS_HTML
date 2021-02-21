@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+}
+header,
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+section{
+    background: #00BFFF;
+}
+header{
+    background: #4169E1;
+    position: relative;
+    
+}
+.ondas{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.onda1{
+    animation: moveOnda1 3s ease-in-out infinite alternate;
+}
+@keyframes moveOnda1{
+    from{
+        transform: translateX(-1000px);
+    }
+}
+.onda2{
+    animation: moveOnda2 3s 0.7s ease-in-out infinite alternate;
+}
+@keyframes moveOnda2{
+    from{
+        transform: translateX(-700px);
+    }
+}
+.onda3{
+    animation: moveOnda3 3s 0.2s ease-in-out infinite alternate;
+}
+@keyframes moveOnda3{
+    from{
+        transform: translateX(-300px);
+       
+    }
+}

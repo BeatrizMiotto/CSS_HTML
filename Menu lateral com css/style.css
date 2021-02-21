@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./imagens/cidade.jpg");
+    background-size: 100%;
+
+}
+
+ul{
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    
+}
+
+img{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav{
+    background-color: rgba(78, 53, 74, 0.5);
+    width: 350px;
+    height: 100vh;
+    left: -350px;
+    position: absolute;
+    transition:  all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+a{
+    display: block;
+    padding: 25px 5px;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(230, 176, 223);
+    color: black;
+}
+label{
+    padding: 15PX;
+    position: absolute;
+    z-index: 1;
+}
